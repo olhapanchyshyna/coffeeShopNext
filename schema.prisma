@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./db.sqlite"
+}
+
+model bestProductItem {
+  id    Int    @id @default(autoincrement())
+  title String
+  src   String
+  alt   String
+  price String
+}
+
+model productItem {
+  id      Int    @id @default(autoincrement())
+  title   String
+  src     String
+  alt     String
+  country String
+  price   String
+}
