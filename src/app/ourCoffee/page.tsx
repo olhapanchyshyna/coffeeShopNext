@@ -1,9 +1,11 @@
 import ProductsList from '@/entities/ProductsList/ui/ProductsList'
 import Filter from '@/features/Filter/ui/Filter'
 import Search from '@/features/Search/ui/Search'
+import { getPages } from '@/shared/api/getPages'
 import DescriptionInPage from '@/widgets/DescriptionInPage/ui/DescriptionInPage'
 import HeadImageSection from '@/widgets/HeadImageSection/ui/HeadImageSection'
 import { PrismaClient, productItem } from '@prisma/client'
+
 
 const aboutDescriptionParagraph: string[] = [
 	'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -16,8 +18,7 @@ const aboutDescriptionParagraph: string[] = [
 ]
 
 export default async function ourCoffee() {
-	const prisma = new PrismaClient()
-	const data:productItem[] = await prisma.productItem.findMany();
+	const data = await getPages();
 
 	return (
 		<>
@@ -35,7 +36,7 @@ export default async function ourCoffee() {
 				isLine = 'yes'
 			/>
 			<div className='flex justify-between m-auto max-w-[700px]'>
-				<Search/>
+				<Search data={data}/>
 				<Filter/>
 			</div>
 			

@@ -1,9 +1,10 @@
 import ProductsList from '@/entities/ProductsList/ui/ProductsList'
+import { getPages } from '@/shared/api/getPages'
 import { PrismaClient, productItem } from '@prisma/client'
 
 export default async function BestProducts() {
-	const prisma = new PrismaClient()
-	const data: productItem[] = await prisma.productItem.findMany()
+
+	const data = await getPages();
 
 	return (
 		<section className="bg-[url('/best-product-bg.png')] pt-[80px] pb-[110px]">

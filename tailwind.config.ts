@@ -68,7 +68,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage:{
-        'coffeeShop': 'url("/our-coffee-bg.png")'
+        'coffeeShop': 'url("/our-coffee-bg.png")',
+        'cupOfCocoa': 'url("/pleasure-bg.png")'
       }
     },
   },
