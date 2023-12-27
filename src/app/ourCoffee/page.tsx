@@ -1,4 +1,6 @@
 import ProductsList from '@/entities/ProductsList/ui/ProductsList'
+import Filter from '@/features/Filter/ui/Filter'
+import Search from '@/features/Search/ui/Search'
 import DescriptionInPage from '@/widgets/DescriptionInPage/ui/DescriptionInPage'
 import HeadImageSection from '@/widgets/HeadImageSection/ui/HeadImageSection'
 import { PrismaClient, productItem } from '@prisma/client'
@@ -32,7 +34,11 @@ export default async function ourCoffee() {
 				blockInPage = 'yes'
 				isLine = 'yes'
 			/>
-
+			<div className='flex justify-between m-auto max-w-[700px]'>
+				<Search/>
+				<Filter/>
+			</div>
+			
 			<ProductsList data={data} typeProduct='normal'/>
 			
 		</>
