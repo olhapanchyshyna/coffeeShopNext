@@ -7,8 +7,8 @@ export default async function BestProducts() {
 	const data = await getPages();
 
 	return (
-		<section className="bg-[url('/best-product-bg.png')] pt-[80px] pb-[110px]">
-			<h2 className='text-center text-[24px]'>Our best</h2>
+		<section className="bg-[url('/best-product-bg.png')] pt-[80px] pb-[90px]">
+			<h2 className='text-center text-[24px] mb-[40px]'>Our best</h2>
 			<ProductsList data={data} typeProduct='best'/>
 		</section>
 	)

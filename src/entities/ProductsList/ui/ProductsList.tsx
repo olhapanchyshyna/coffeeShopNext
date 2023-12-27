@@ -16,7 +16,7 @@ export default function ProductsList({
 	typeProduct: string
 }) {
 	return (
-		<div className='grid mt-[40px] grid-cols-[repeat(3,minmax(220px,240px))] gap-[70px] items-center justify-center max-[825px]:gap-[30px] max-[825px]:grid-cols-[repeat(3,minmax(180px,200px))] max-[680px]:grid-cols-[repeat(1,minmax(180px,200px))]'>
+		<div className='grid mb-[20px] grid-cols-[repeat(3,minmax(220px,240px))] gap-[70px] items-center justify-center max-[825px]:gap-[30px] max-[825px]:grid-cols-[repeat(3,minmax(180px,200px))] max-[680px]:grid-cols-[repeat(1,minmax(180px,200px))]'>
 			{data.map(({ src, alt, title, price, country, type }, i) => (
 				<>
 					{typeProduct === type ? (

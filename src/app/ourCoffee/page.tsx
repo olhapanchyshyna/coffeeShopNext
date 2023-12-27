@@ -35,7 +35,7 @@ export default async function ourCoffee() {
 				blockInPage = 'yes'
 				isLine = 'yes'
 			/>
-			<div className='flex justify-between m-auto max-w-[700px]'>
+			<div className='flex justify-between m-auto max-w-[700px] mb-[60px]'>
 				<Search data={data}/>
 				<Filter/>
 			</div>
