@@ -33,7 +33,7 @@ export default async function ourCoffee() {
 				isLine = 'yes'
 			/>
 
-			<ProductsList data={data}/>
+			<ProductsList data={data} typeProduct='normal'/>
 			
 		</>
 	)

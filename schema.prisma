@@ -7,14 +7,6 @@ datasource db {
   url      = "file:./db.sqlite"
 }
 
-model bestProductItem {
-  id    Int    @id @default(autoincrement())
-  title String
-  src   String
-  alt   String
-  price String
-}
-
 model productItem {
   id      Int    @id @default(autoincrement())
   title   String
@@ -22,4 +14,5 @@ model productItem {
   alt     String
   country String
   price   String
+  type    String
 }
