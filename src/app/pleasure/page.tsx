@@ -1,5 +1,5 @@
 import ProductsList from '@/entities/ProductsList/ui/ProductsList'
-import { getPages } from '@/shared/api/getPages'
+import { getProducts } from '@/shared/api/getProducts'
 import DescriptionInPage from '@/widgets/DescriptionInPage/ui/DescriptionInPage'
 import HeadImageSection from '@/widgets/HeadImageSection/ui/HeadImageSection'
 
@@ -14,7 +14,7 @@ const aboutDescriptionParagraph: string[] = [
 ]
 
 export default async function page() {
-	const data = await getPages();
+	const data = await getProducts()
 
 	return (
 		<>
@@ -22,10 +22,10 @@ export default async function page() {
 
 			<DescriptionInPage
 				title='About our goods'
-				src='/logo-with-line-black.svg'
+				src='logo-with-line-black.svg'
 				alt='logo-with-line-black'
 				descriptions={aboutDescriptionParagraph}
-				image='/cup-of-coffee.png'
+				image='cup-of-coffee.png'
 				imageAlt='cup-of-coffee'
 				imageWidth={350}
 				imageHeight={400}

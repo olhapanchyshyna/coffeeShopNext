@@ -13,7 +13,7 @@ export default function Home() {
 			<IntroMain />
 			<DescriptionBlock
 				title='About Us'
-				src='/logo-with-line-black.svg'
+				src='logo-with-line-black.svg'
 				alt='logo-with-line-black'
 				descriptions={aboutDescriptionParagraph}
 				blockInPage = 'no'

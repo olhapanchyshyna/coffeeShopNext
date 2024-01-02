@@ -1,15 +1,13 @@
 import ProductsList from '@/entities/ProductsList/ui/ProductsList'
-import { getPages } from '@/shared/api/getPages'
-import { PrismaClient, productItem } from '@prisma/client'
+import { getProducts } from '@/shared/api/getProducts'
 
 export default async function BestProducts() {
-
-	const data = await getPages();
+	const data = await getProducts()
 
 	return (
 		<section className="bg-[url('/best-product-bg.png')] pt-[80px] pb-[90px]">
 			<h2 className='text-center text-[24px] mb-[40px]'>Our best</h2>
-			<ProductsList data={data} typeProduct='best'/>
+			<ProductsList data={data} typeProduct='best' />
 		</section>
 	)
 }

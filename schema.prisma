@@ -15,4 +15,5 @@ model productItem {
   country String
   price   String
   type    String
+  slug    String
 }

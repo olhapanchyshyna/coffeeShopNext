@@ -3,8 +3,8 @@ import { dataItemMenuType } from '@/widgets/Header/types/types'
 import Image from 'next/image'
 
 const dataMenuItems: dataItemMenuType[] = [
-	{ id: 1, name: 'Our coffee', src: 'ourCoffe' },
-	{ id: 2, name: 'For your pleasure', src: 'pleasure' },
+	{ id: 1, name: 'Our coffee', src: '/ourCoffee' },
+	{ id: 2, name: 'For your pleasure', src: '/pleasure' },
 ]
 
 export default function Footer() {

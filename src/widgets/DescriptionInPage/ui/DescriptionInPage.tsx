@@ -1,25 +1,28 @@
 import DescriptionBlock from '@/entities/DescriptionBlock/ui/DescriptionBlock'
 import { Separator } from '@/shared/ui/separator'
 import Image from 'next/image'
-import { propsAboutDescription } from '../types/types'
+import { propsAboutPage } from '../model/types'
 
 export default function DescriptionInPage({
-	title,
-	src,
-	alt,
-	descriptions,
-	image,
-	imageAlt,
+	title = 'нет данных',
+	src = 'нет данных',
+	alt = 'нет данных',
+	descriptions = ['нет данных'],
+	image = 'нет данных',
+	imageAlt = 'нет данных',
 	imageWidth,
 	imageHeight,
-	blockInPage,
-	isLine,
-}: propsAboutDescription) {
+	blockInPage = 'yes',
+	isLine = 'yes',
+	aboutProduct = 'no',
+	country,
+	price
+}: propsAboutPage) {
 	return (
 		<section className='max-w-[1000px] m-auto pt-[70px] pb-[60px] justify-around'>
-			<div  className='flex justify-around mb-[57px]'>
+			<div className='flex justify-around mb-[57px]'>
 				<Image
-					src={image}
+					src={`/${image}`}
 					alt={imageAlt}
 					width={imageWidth}
 					height={imageHeight}
@@ -30,11 +33,13 @@ export default function DescriptionInPage({
 					alt={alt}
 					descriptions={descriptions}
 					blockInPage={blockInPage}
+					aboutProduct={aboutProduct}
+					country={country}
+					price={price}
 				/>
 			</div>
 
 			{isLine === 'yes' && (
-				// <div className='w-[240px] h-[1px] bg-black'></div>
 				<Separator className='w-[240px] h-[1px] bg-black m-auto' />
 			)}
 		</section>
