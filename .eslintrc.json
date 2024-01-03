@@ -13,6 +13,10 @@
 
 		"boundaries/elements": [
 			{
+				"type": "app",
+				"pattern": "app"
+			},
+			{
 				"type": "widgets",
 				"pattern": "widgets/*",
 				"capture": ["widget"]

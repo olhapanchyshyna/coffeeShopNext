@@ -1,3 +1,5 @@
+'use client'
+import { useProductsFilter } from '@/shared/store/store'
 import {
 	Card,
 	CardContent,
@@ -5,27 +7,31 @@ import {
 	CardFooter,
 	CardHeader,
 } from '@/shared/ui/card'
-import { productItem } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { productListType } from '../model/types'
 
 export function ProductsList({
 	data,
 	typeProduct,
-}: {
-	data: productItem[]
-	typeProduct: string
-}) {
+	filter = 'no',
+}: productListType) {
+	const { filteredProducts, setInitProducts } = useProductsFilter()
+	useEffect(() => setInitProducts(data), [])
+
+	const resultData =
+		filter === 'no' ? data : filteredProducts.length === 0 ? data : filteredProducts
+
 	return (
 		<div className='grid mb-[20px] grid-cols-[repeat(3,minmax(220px,240px))] gap-[70px] items-center justify-center max-[825px]:gap-[30px] max-[825px]:grid-cols-[repeat(3,minmax(180px,200px))] max-[680px]:grid-cols-[repeat(1,minmax(180px,200px))]'>
-			{data.map(({ src, alt, title, price, country, type, slug }, i) => (
+			{resultData.map(({ src, alt, title, price, country, type, slug }, i) => (
 				<>
 					{typeProduct === type ? (
 						<Link href={`/ourCoffee/${slug}`}>
 							<Card
 								key={i}
 								className='flex flex-col max-w-[240px] bg-slate-50/60 px-[25px] py-[25px] max-[825px]:px-[15px] shadow-xl hover:scale-105 transition'
-
 							>
 								<CardHeader className='p-0'>
 									<Image

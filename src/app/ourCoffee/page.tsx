@@ -1,4 +1,3 @@
-
 import { ProductsList } from '@/entities/ProductsList'
 import { Filter } from '@/features/Filter'
 import { Search } from '@/features/Search'
@@ -41,7 +40,7 @@ export default async function ourCoffee() {
 				<Filter />
 			</div>
 
-			<ProductsList data={data} typeProduct='normal' />
+			<ProductsList data={data} typeProduct='normal' filter='yes' />
 		</>
 	)
 }

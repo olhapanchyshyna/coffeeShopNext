@@ -16,7 +16,6 @@ import { NavbarPropsType } from '../types/types'
 
 export function Navbar({ data, color }: NavbarPropsType) {
 	const pathname = usePathname()
-	console.log(pathname)
 	return (
 		<nav className='w-[355px]'>
 			<ul className='flex items-end justify-between text-[12px] max-[670px]:hidden'>
