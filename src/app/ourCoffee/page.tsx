@@ -1,9 +1,11 @@
-import ProductsList from '@/entities/ProductsList/ui/ProductsList'
-import Filter from '@/features/Filter/ui/Filter'
-import Search from '@/features/Search/ui/Search'
+
+import { ProductsList } from '@/entities/ProductsList'
+import { Filter } from '@/features/Filter'
+import { Search } from '@/features/Search'
 import { getProducts } from '@/shared/api/getProducts'
-import DescriptionInPage from '@/widgets/DescriptionInPage/ui/DescriptionInPage'
-import HeadImageSection from '@/widgets/HeadImageSection/ui/HeadImageSection'
+import { DescriptionInPage } from '@/widgets/DescriptionInPage'
+import { HeadImageSection } from '@/widgets/HeadImageSection'
+
 
 const aboutDescriptionParagraph: string[] = [
 	'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',

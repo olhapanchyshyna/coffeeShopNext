@@ -1,6 +1,6 @@
-import DescriptionBlock from '@/entities/DescriptionBlock/ui/DescriptionBlock'
-import BestProducts from '@/widgets/BestProducts/ui/BestProducts'
-import IntroMain from '@/widgets/IntroMain/ui/IntroMain'
+import { DescriptionBlock } from '@/entities/DescriptionBlock'
+import { BestProducts } from '@/widgets/BestProducts'
+import { IntroMain } from '@/widgets/IntroMain'
 
 const aboutDescriptionParagraph: string[] = [
 	'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.',

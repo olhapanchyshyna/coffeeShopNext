@@ -1,7 +1,7 @@
 import { getProduct } from '@/shared/api/getProduct'
 import { getProducts } from '@/shared/api/getProducts'
-import DescriptionInPage from '@/widgets/DescriptionInPage/ui/DescriptionInPage'
-import HeadImageSection from '@/widgets/HeadImageSection/ui/HeadImageSection'
+import { DescriptionInPage } from '@/widgets/DescriptionInPage'
+import { HeadImageSection } from '@/widgets/HeadImageSection'
 
 
 const aboutDescriptionParagraph: string[] = [

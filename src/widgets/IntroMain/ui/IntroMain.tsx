@@ -2,10 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/shared/ui/button'
 
-export default function IntroMain() {
+export function IntroMain() {
 
-
-  
   return (
     <section className="flex flex-col items-center bg-[url('/intro-bg.png')] h-[640px] max-w-[1440px] w-fuul m-auto pt-[180px] text-slate-100/95 max-[825px]:h-[540px] max-[570px]:px-[15px] max-[475px]:pt-[100px]">
         <h1 className='text-[40px] text-shadow-xl shadow-slate-800 max-[825px]:text-[34px] max-[570px]:text-center'>Everything You Love About Coffee</h1>

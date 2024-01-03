@@ -1,9 +1,10 @@
-import DescriptionBlock from '@/entities/DescriptionBlock/ui/DescriptionBlock'
+
 import { Separator } from '@/shared/ui/separator'
 import Image from 'next/image'
 import { propsAboutPage } from '../model/types'
+import { DescriptionBlock } from '@/entities/DescriptionBlock'
 
-export default function DescriptionInPage({
+export function DescriptionInPage({
 	title = 'нет данных',
 	src = 'нет данных',
 	alt = 'нет данных',

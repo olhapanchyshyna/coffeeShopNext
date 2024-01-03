@@ -1,7 +1,8 @@
-import ProductsList from '@/entities/ProductsList/ui/ProductsList'
+
+import { ProductsList } from '@/entities/ProductsList'
 import { getProducts } from '@/shared/api/getProducts'
 
-export default async function BestProducts() {
+export async function BestProducts() {
 	const data = await getProducts()
 
 	return (

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Merienda } from 'next/font/google'
 import './globals.css'
-import Header from '@/widgets/Header/ui/Header'
-import Footer from '@/widgets/Footer/ui/Footer'
+
+import { Header } from '@/widgets/Header'
+import { Footer } from '@/widgets/Footer'
 
 const inter = Merienda({ subsets: ['latin'] })
 

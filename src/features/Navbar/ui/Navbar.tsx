@@ -14,7 +14,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NavbarPropsType } from '../types/types'
 
-export default function Navbar({ data, color }: NavbarPropsType) {
+export function Navbar({ data, color }: NavbarPropsType) {
 	const pathname = usePathname()
 	console.log(pathname)
 	return (

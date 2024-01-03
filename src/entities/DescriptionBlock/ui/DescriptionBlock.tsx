@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Image from 'next/image'
 import { propsAboutDescription } from '../model/types'
 
-export default function DescriptionBlock({
+export function DescriptionBlock({
 	title,
 	src,
 	alt,

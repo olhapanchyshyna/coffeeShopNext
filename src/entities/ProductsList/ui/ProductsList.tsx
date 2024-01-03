@@ -9,7 +9,7 @@ import { productItem } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ProductsList({
+export function ProductsList({
 	data,
 	typeProduct,
 }: {

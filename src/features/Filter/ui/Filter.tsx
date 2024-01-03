@@ -1,6 +1,6 @@
 import { Button } from '@/shared/ui/button'
 
-export default function Filter() {
+export function Filter() {
 	return (
 		<div className='flex justify-between items-center max-w-[330px]'>
 			<h3 className='text-[14px]'>Or filter</h3>

@@ -1,4 +1,5 @@
-import { dataItemMenuType } from "@/widgets/Header/types/types"
+import { dataItemMenuType } from '@/shared/types/dataItemMenuType'
+
 
 export type NavbarPropsType = {
     data: dataItemMenuType[]

@@ -4,7 +4,7 @@ import { Input } from '@/shared/ui/input'
 import { productItem } from '@prisma/client'
 import React from 'react'
 
-export default function Search({data}: {data: productItem[]}) {
+export function Search({data}: {data: productItem[]}) {
 
 	const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
 		console.log(e.target.value);

@@ -1,5 +1,5 @@
-import Navbar from '@/features/Navbar/ui/Navbar'
-import { dataItemMenuType } from '@/widgets/Header/types/types'
+import { Navbar } from '@/features/Navbar'
+import { dataItemMenuType } from '@/shared/types/dataItemMenuType'
 import Image from 'next/image'
 
 const dataMenuItems: dataItemMenuType[] = [
@@ -7,7 +7,7 @@ const dataMenuItems: dataItemMenuType[] = [
 	{ id: 2, name: 'For your pleasure', src: '/pleasure' },
 ]
 
-export default function Footer() {
+export function Footer() {
 	return (
 		<footer className='flex flex-col container m-auto justify-center items-center pt-[30px] pb-[20px]'>
 			<Navbar data={dataMenuItems} color='black' />
