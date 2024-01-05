@@ -26,11 +26,9 @@ export function ProductsList({
 	return (
 		<div className='grid mb-[20px] grid-cols-[repeat(3,minmax(220px,240px))] gap-[70px] items-center justify-center max-[825px]:gap-[30px] max-[825px]:grid-cols-[repeat(3,minmax(180px,200px))] max-[680px]:grid-cols-[repeat(1,minmax(180px,200px))]'>
 			{resultData.map(({ src, alt, title, price, country, type, slug }, i) => (
-				<>
-					{typeProduct === type ? (
-						<Link href={`/ourCoffee/${slug}`}>
+					typeProduct === type ? (
+						<Link href={`/ourCoffee/${slug}`} key={i}>
 							<Card
-								key={i}
 								className='flex flex-col max-w-[240px] bg-slate-50/60 px-[25px] py-[25px] max-[825px]:px-[15px] shadow-xl hover:scale-105 transition'
 							>
 								<CardHeader className='p-0'>
@@ -57,8 +55,7 @@ export function ProductsList({
 								</CardFooter>
 							</Card>
 						</Link>
-					) : null}
-				</>
+					) : null
 			))}
 		</div>
 	)
