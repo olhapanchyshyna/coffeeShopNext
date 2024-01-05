@@ -35,7 +35,7 @@ export default async function ourCoffee() {
 				isLine='yes'
 				aboutProduct='no'
 			/>
-			<div className='flex justify-between m-auto max-w-[800px] mb-[60px]'>
+			<div className='flex justify-between m-auto max-w-[800px] mb-[60px] max-[920px]:max-w-[670px] max-[700px]:flex-col max-[700px]:justify-center max-[700px]:max-w-[400px]'>
 				<Search />
 				<Filter />
 			</div>

@@ -56,7 +56,7 @@ export function Navbar({ data, color }: NavbarPropsType) {
 					</li>
 				))}
 			</ul>
-			<ul className='min-[671px]:hidden ml-[40px]'>
+			<ul className='min-[671px]:hidden ml-[30px]'>
 				<DropdownMenu>
 					<DropdownMenuTrigger className='text-slate-50 hover:text-slate-300'>
 						<Menu />
@@ -65,17 +65,17 @@ export function Navbar({ data, color }: NavbarPropsType) {
 						<DropdownMenuSeparator />
 						<Link href='/'>
 							<Image
-								src='/logo-black.svg'
-								width={108}
+								src='/logo-black-670px.svg'
+								width={80}
 								height={35}
 								alt='logo-black'
-								className='mb-[10px]'
+								className='mb-[10px] m-auto'
 							/>
 						</Link>
 						{data.map(({ id, name, src }) => (
 							<li key={id} className='text-slate-800 list-none mb-[3px] '>
 								<DropdownMenuItem>
-									<Link className='m-auto' href={src}>
+									<Link className='m-auto text-[12px]' href={src}>
 										{name}
 									</Link>
 								</DropdownMenuItem>

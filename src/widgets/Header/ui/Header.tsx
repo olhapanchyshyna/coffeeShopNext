@@ -8,7 +8,7 @@ const dataMenuItems: dataItemMenuType[] = [
 
 export function Header() {
 	return (
-		<header className='container max-w-6xl absolute left-1/2 transform -translate-x-1/2 top-0 bg-transparent py-[30px] max-[670px]:pt-[15px]'>
+		<header className='container max-w-6xl absolute left-1/2 transform -translate-x-1/2 top-0 bg-transparent py-[30px] max-[920px]:pt-[15px]'>
 			<Navbar data={dataMenuItems} color='white' />
 		</header>
 	)

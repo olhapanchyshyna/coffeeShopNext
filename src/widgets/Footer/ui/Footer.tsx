@@ -9,7 +9,7 @@ const dataMenuItems: dataItemMenuType[] = [
 
 export function Footer() {
 	return (
-		<footer className='flex flex-col container m-auto justify-center items-center pt-[30px] pb-[20px]'>
+		<footer className='flex flex-col container m-auto justify-center items-center pt-[30px] pb-[20px] max-[700px]:pt-[5px] max-[700px]:pb-[15px]'>
 			<Navbar data={dataMenuItems} color='black' />
 			<Image
 				className='mt-[30px] max-[670px]:mt-[0px]'
