@@ -1,5 +1,5 @@
 import { Navbar } from '@/features/Navbar'
-import { dataItemMenuType } from '@/shared/types/dataItemMenuType'
+import { dataItemMenuType } from '@/shared/types/types'
 import Image from 'next/image'
 
 const dataMenuItems: dataItemMenuType[] = [

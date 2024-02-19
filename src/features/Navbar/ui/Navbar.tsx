@@ -16,8 +16,9 @@ import { NavbarPropsType } from '../types/types'
 
 export function Navbar({ data, color }: NavbarPropsType) {
 	const pathname = usePathname()
+	
 	return (
-		<nav className='w-[355px]'>
+		<nav className='w-[355px] max-[670px]:w-[320px]'>
 			<ul className='flex items-end justify-between text-[12px] max-[670px]:hidden'>
 				<Link href='/'>
 					{color === 'black' && (
@@ -56,7 +57,7 @@ export function Navbar({ data, color }: NavbarPropsType) {
 					</li>
 				))}
 			</ul>
-			<ul className='min-[671px]:hidden ml-[30px]'>
+			<ul className='min-[671px]:hidden ml-[30px] max-[671px]:max-w-[300px]'>
 				<DropdownMenu>
 					<DropdownMenuTrigger className='text-slate-50 hover:text-slate-300'>
 						<Menu />

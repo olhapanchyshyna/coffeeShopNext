@@ -1,8 +1,8 @@
 
 import { Separator } from '@/shared/ui/separator'
 import Image from 'next/image'
-import { propsAboutPage } from '../model/types'
 import { DescriptionBlock } from '@/entities/DescriptionBlock'
+import { propsAboutPage } from '@/shared/types/types'
 
 export function DescriptionInPage({
 	title = 'нет данных',
