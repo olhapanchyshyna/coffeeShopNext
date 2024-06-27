@@ -18,7 +18,7 @@ export function ProductsList({
 	filter = 'no',
 }: productListType) {
 	const { filteredProducts, setInitProducts } = useProductsFilter()
-	useEffect(() => setInitProducts(data), [])
+	useEffect(() => setInitProducts(data), [data, setInitProducts])
 
 	const resultData =
 		filter === 'no' ? data : filteredProducts.length === 0 ? data : filteredProducts

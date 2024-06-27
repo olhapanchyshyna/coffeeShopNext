@@ -5,7 +5,7 @@ export type dataItemMenuType = {
 }
 
 export type propsAboutDescription = {
-	title: string
+	title: string | undefined
 	src: string
 	alt: string
 	descriptions: string[]
